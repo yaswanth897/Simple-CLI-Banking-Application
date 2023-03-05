@@ -3,6 +3,22 @@ This is a simple command line interface (CLI) banking application that uses arra
 
 Here is a brief overview of the code:
 
+The program begins by presenting the user with a menu of options: login, create an account, or close the program.
+
+If the user selects "login," they are prompted to enter their username and password. If the credentials are valid, the user is greeted by name and presented with a new menu of options: view balance, transfer funds, withdraw funds, or logout.
+
+If the user selects "create an account," they are prompted to enter a new username, password, and initial balance. The program then adds this new account to its list of users.
+
+If the user selects "view balance," they are shown their current balance.
+
+If the user selects "transfer funds," they are prompted to enter the username of the person they wish to transfer funds to, as well as the amount they wish to transfer. The program then updates the account balances accordingly.
+
+If the user selects "withdraw funds," they are prompted to enter the amount they wish to withdraw. If the amount is within the allowed range (between $100 and $20,000), the program deducts the amount from the user's account balance.
+
+If the user selects "logout," they are logged out of the system and returned to the original menu.
+
+The program uses several arrays to store user data, including usernames, passwords, and account balances. It also includes methods for each of the program's main functions, as well as some helper methods for error checking and clearing the console.
+
 usernames, passwords, and amount_in_account are three arrays that store usernames, passwords, and account balances respectively.
 
 choose() method prints a menu and prompts the user to select an option. Based on the selected option, the method calls other methods such as login(), create(), and close().
